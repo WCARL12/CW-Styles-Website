@@ -2,14 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: auto;
 }
 .navbar {
   position: absolute;
-  background-color: rgba(255, 190, 98, 0.75);
+  /* background-color: rgba(255, 190, 98, 0.75); */
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   padding: 20px;
   width: 100%;
+  height: 100px;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  padding-left: 40px;
+  font-size: 40px;
+  color: white;
 }
 .logo img {
   clip-path: circle();
@@ -27,20 +37,107 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 80px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
-
+  letter-spacing: 1.5px;
   font-style: normal;
 }
 
 a {
-  color: black;
+  /* color: black; */
+  color: white;
   text-decoration: none;
 }
 .slide_1 {
-  background-image: url("/School_Courses/School_Web_Development/Project/images/Header_img_3.jpg");
+  background-image: url("images/Andrew-Garfield-and-Zendaya-Variety-Actors-on-Actors-16x9-2.webp");
   width: 100%;
   height: 1000px;
   background-size: cover;
+}
+.seek {
+  /* background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%); */
+  background-color: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+.seek h1 {
+  text-shadow: 1px 1px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.seek span {
+  /* background-color: rgb(238, 238, 238); */
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid black;
+  border-radius: 40px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.slide_2_v2 {
+  color: white;
+  background-color: #0d1414;
+  height: 1530px;
+}
+.slide_2_v2_about {
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid white;
+  border-radius: 30px;
+  font-weight: bolder;
+  /* text-align: center; */
+  padding: 15px;
+  padding-bottom: auto;
+  width: 180px;
+  height: 60px;
+}
+.slide_2_v2_img {
+  float: right;
+  width: 50%;
+}
+.slide_2_v2_text {
+  width: 50%;
+  padding-top: 25%;
+  color: white;
+}
+.slide_2_v2_text h1 {
+  margin-left: 60px;
+  font-size: 80px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+}
+.slide_2_v2_text p {
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 80px;
+}
+
+.slide_3 {
+  background-image: url("images/pexels-terje-sollie-298863.jpg");
+  width: 100%;
+  height: 1200px;
+  background-size: cover;
+}
+.slide_3_texts {
+  border: 2px solid white;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-left: 15%;
+
+  /* width: 300px; */
+}
+
+.slide_3 h1 {
+  padding-top: 20%;
+  font-size: 60px;
 }
