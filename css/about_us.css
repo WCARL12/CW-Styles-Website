@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: auto;
+}
+
+body {
+  /* background-image: linear-gradient(to top, #a5a5a5 50%, #e2ebf0 100%); */
+  background-repeat: no-repeat;
+  background-color: white;
+
+  /* width: 80%; */
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(
+      to top,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 60%,
+      rgb(174, 212, 255) 50%,
+      rgb(174, 212, 255) 100%
+    )
+    fixed; */
+  background: linear-gradient(
+      to top,
+      rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 55%,
+      rgb(255, 222, 152) 50%,
+      rgb(255, 213, 122) 100%
+    )
+    fixed;
+
+  /* max-width: 700px; */
+  max-width: 900px;
+  /* background-image: url("/img/15338.png"); */
+}
+section {
+  /* background: linear-gradient(
+    to top,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 60%,
+    rgb(255, 222, 152) 50%,
+    rgb(255, 213, 122) 100%
+  )
+  fixed; */
+  /* background-image: url("/img/15338.png"); */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: auto; */
+}
+section h1 {
+  border: solid 5px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 4.5em;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  /* font-family: "Dancing Script", cursive; */
+  /* font-family: "Piazzolla", serif; */
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  
+  /* font-weight: lighter; */
+  /* font-weight: bold; */
+}
+img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+section p {
+  /* text-align: center; */
+  color: black;
+  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-left:20%;
+  margin-right:auto ; */
+  margin-top: 6%;
+  width: 125%;
+  line-height: 28px;
+  letter-spacing: 1.1px;
+}
+
+#sec_l {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2em;
+  padding-right: 2px;
+}
+section div {
+  width: 80%;
+}
+
+#sec_2 p{
+  padding-bottom: 50px;
+}
+
+
+.navbar {
+  /* position: absolute; */
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+}
+
+.logo h3{
+  font-family: "Dancing Script", cursive;
+  font-weight: bolder;
+  padding-left: 40px;
+  font-size: 2.5em;
+  color: white;
+}
+.logo img {
+  clip-path: circle();
+  width: 125px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 1em;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1.5px;
+  font-style: normal;
+}
+
+.navbar a {
+  /* color: black; */
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: #e4ffe4;
+  height: 3px;
+  width: 0;
+  left: 0;
+  top: 110%;
+  transition: 0.5s;
+}
+
+.navbar a:hover {
+  color: #d2d2d2;
+}
+
+.navbar a:hover:after {
+  width: 100%;
+}
+.slide_1 img{
+  width: 100%;
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+  section p {
+    font-size: 120%;
+    /* color: orange; */
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  /* section p {
+    color: green;
+  } */
+}
+
+@media only screen and (max-width: 900px) {
+  /* img{
+    width:80%;
+    margin-left: 8%;
+    margin-right: auto;
+  } */
+  section p {
+    /* color: blue; */
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section p {
+    /* color: purple; */
+    font-size: 90%;
+  }
+  nav ul li{
+    font-size: 90%;
+    margin-right: 10px;
+}
+.navbar h3{
+  font-size: 200%;
+  padding-left:20px;
+}
+}
+@media only screen and (max-width: 620px) {
+  section h1{
+    font-size: 370%;
+    padding: 10px
+  }
+  section p {
+    /* color: red; */
+    font-size: 85%;
+  }
+  nav ul li{
+    font-size: 80%;
+    margin-right: 10px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  /* section p {
+    color: black;
+  } */
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+
+
