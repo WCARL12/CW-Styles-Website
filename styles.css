@@ -4,9 +4,16 @@
   box-sizing: border-box;
   max-width: auto;
 }
+body{
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  max-width: 2000px;
+}
 .navbar {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.75);
+  /* position: absolute; */
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  background-color: black;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -14,12 +21,15 @@
   height: 100px;
 }
 
-.logo {
+.logo h3{
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   padding-left: 40px;
-  font-size: 40px;
-  color: white;
+  font-size: 2.5em;
+  color:  rgb(255, 213, 122);
+}
+.logo h3 a{
+  color:  rgb(255, 213, 122);
 }
 .logo img {
   clip-path: circle();
@@ -36,8 +46,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  margin-right: 80px;
-  font-size: 17px;
+  margin-right: 40px;
+  font-size: 1em;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1.5px;
@@ -70,23 +80,26 @@ nav ul li {
 .navbar a:hover:after {
   width: 100%;
 }
-.slide_1 {
-  background-image: url("images/Andrew-Garfield-and-Zendaya-Variety-Actors-on-Actors-16x9-2.webp");
+.slide_1 img{
   width: 100%;
-  height: 1000px;
-  background-size: cover;
+
+
 }
 
 .seek {
+  width: 100%;
   background-color: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
 .seek h1 {
   text-shadow: 1px 1px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px; */
+  padding-top: 2.2%;
+  padding-bottom: 2.2%;
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 2.5em;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -97,13 +110,17 @@ nav ul li {
   border-radius: 40px;
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: 1.2em;
 }
 
 .slide_2_v2 {
+  display: flex;
+  justify-content: space-evenly;
   color: white;
   background-color: #0d1414;
-  height: 1530px;
+  width: 100%;
+
 }
 .slide_2_v2_about {
   margin-right: auto;
@@ -113,9 +130,9 @@ nav ul li {
   font-weight: bolder;
   /* text-align: center; */
   padding: 15px;
-  padding-bottom: auto;
-  width: 180px;
-  height: 60px;
+  /* padding-bottom: auto; */
+  width: max-content;
+  /* height: 2%; */
   transition: all ease 0.3s;
 }
 
@@ -124,83 +141,104 @@ nav ul li {
   color: #ff595c;
 }
 .slide_2_v2_about a {
+  font-size: 1em;
   text-decoration: inherit;
   color: inherit;
 }
 
-.slide_2_v2_img {
-  float: right;
+.slide_2_v2_img{
+  /* float: right; */
   width: 50%;
+  /* height: 100%; */
+}
+.slide_2_v2_img img{
+  width: 100%;
 }
 .slide_2_v2_text {
+  /* clear: both; */
   width: 50%;
-  padding-top: 25%;
+  /* padding-top: 25%; */
   color: white;
 }
 .slide_2_v2_text h1 {
-  margin-left: 60px;
-  font-size: 80px;
+  padding-top: 30px;
+  margin-left: 40px;
+  /* font-size: 80px; */
+  font-size: 4em;
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
+  margin-top:240px;
 }
 .slide_2_v2_text p {
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 1.2em;
   text-align: center;
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  margin-bottom: 80px;
+  
+}
+.slide_2_v2_text span{
+  color:  rgb(255, 213, 122);
 }
 
 .slide_3 {
   clear: both;
-  background-image: url("images/pexels-terje-sollie-298863.jpg");
+  background-image: url("/img/pexels-terje-sollie-298863.jpg");
   width: 100%;
-  height: 1200px;
+  min-height: 800px;
+  /* height: max-content; */
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  /* position: relative; */
 }
 
-#useless {
-  width: 1000px;
-  margin-bottom: 300px;
 
-  display: block;
-}
+
 .slide_3_container {
-  margin-left: 54%;
-  padding-top: 50px;
+  /* padding-top: 200px; */
+  margin-left:50%;
+  margin-right: auto;
+  /* margin-left: 54%; */
+  padding-top: 4%;
   border: 2px solid white;
+  padding-bottom: 4%;
 
-  width: 800px;
-  height: 350px;
+  width: 40%;
+  
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 40px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
 }
 
 .slide_3_container h1 {
   text-align: center;
-  font-size: 60px;
-  padding-bottom: 20px;
+  font-size: 2.5em;
+  padding-bottom: 7%;
+  padding-left: 0;
+  padding-right: 0;
 }
 .slide_3_container p {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.4em;
   width: auto;
 }
 #see_products {
-  font-size: 22px;
+  font-size: 1.2em;
   font-weight: bold;
-  border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 165px;
-  height: 45px;
-  margin-top: 40px;
+  border-radius: 30px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  width: max-content;
+  /* height: 0px; */
+  margin-top: 10%;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid white;
@@ -218,7 +256,7 @@ nav ul li {
 }
 
 footer {
-  height: 300px;
+
   width: 100%;
 }
 
@@ -239,30 +277,34 @@ footer {
 .f_payment h3 {
   margin-top: 30px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1.4em;
 }
 .f_2_all {
   width: 50%;
   float: right;
 }
+#f_2_bot p{
+  padding-left: 2%;
+  padding-right: 9%;
+
+}
 .f_logo {
   padding-top: 20px;
   margin-left: 20%;
 }
-#f_2_top {
-  margin-bottom: 15px;
-  font-size: 20px;
-}
+
 .f_logo h3 {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
-  font-size: 25px;
+  font-size: 1.5em;
   display: inline;
   float: left;
   margin-right: 18px;
+  padding-top:5px;
 }
 #f_2_bot {
   color: gray;
+  font-size: 1em;
 }
 
 .f_div_2_1 {
@@ -277,13 +319,13 @@ footer {
   line-height: 28px;
   margin-top: 40px;
   color: rgb(225, 225, 225);
-  font-size: 18px;
+  font-size: 1.1em;
   width: fit-content;
   height: fit-content;
-  margin-left: 150px;
+  /* margin-left: 150px; */
 }
 .f_div_2_sec_1 h4 {
-  font-size: 20px;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 .f_div_2_sec_1 p a {
@@ -300,11 +342,11 @@ footer {
   color: rgb(225, 225, 225);
   width: fit-content;
   height: fit-content;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .f_div_2_sec_2 h4 {
-  font-size: 20px;
+  font-size: 1.1em;
   margin-bottom: 15px;
 }
 
@@ -329,12 +371,13 @@ footer {
 .f_div_2_2_sec_2 h4 {
   margin-top: 30px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 .f_div_2_2_sec_2 p {
   line-height: 24px;
-  width: 270px;
+  width: 90%;
+  font-size: 1.4em;
   height: min-content;
 }
 #submit {
@@ -342,12 +385,223 @@ footer {
   color: white;
   border: solid 3px white;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 1em;
   height: 50px;
-  width: 100px;
+  width: 20%;
   cursor: pointer;
   transition: all ease 0.3s;
 }
 #submit:hover {
   transform: scale(1.1);
+}
+@media only screen and (max-width: 1400px) {
+  body{
+    font-size: 90%;
+   
+    box-shadow: none;
+  }
+  nav ul li{
+      font-size: 90%;
+  }
+  /* a{
+      background-color: green;
+    }
+    ul{
+      background-color: green;
+    }
+    a:hover{
+      background-color: green;
+    }
+    ul{
+      background-color: green;
+    } */
+
+    .slide_2_v2_about a {
+      font-size: 100%;
+      text-decoration: inherit;
+      color: inherit;
+    }
+    .slide_2_v2_text h1{
+      margin-top: 40%;
+        font-size: 300%;
+    }
+    .slide_3{
+      font-size: 80%;
+      min-height: 600px;
+    }
+    footer{
+      font-size: 90%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  body{
+    font-size: 90%;
+   
+    box-shadow: none;
+  }
+  /* nav ul li{
+      font-size: 120%;
+  } */
+  .slide_2_v2_text h1{
+    margin-top: 40%;
+      font-size: 300%;
+  }
+  .slide_2_v2_text p{
+    font-size:120%;
+  }
+  .slide_3{
+    font-size:75%;
+    min-height: 500px;
+  }
+  /* a{
+      background-color: blue;
+    }
+    ul{
+      background-color: blue;
+    }
+    a:hover{
+      background-color: blue;
+    }
+    ul{
+      background-color: blue;
+    } */
+    footer{
+      font-size: 73%;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  body{
+    font-size: 90%;
+    
+   
+    box-shadow: none;
+  }
+  .slide_2_v2_text h1{
+    margin-top: 30%;
+      font-size: 250%;
+       /* background-color: red; */
+  }
+  
+  .slide_2_v2_text p{
+    font-size: 120%;
+  }
+
+  /* nav ul li{
+      font-size: 120%;
+  } */
+  /* a{
+      background-color: red;
+    }
+    ul{
+      background-color: red;
+    }
+    a:hover{
+      background-color: red;
+    }
+    ul{
+      background-color: red;
+    } */
+    .slide_3{
+      font-size: 65%;
+      min-height: 400px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 767px) {
+  body{
+      font-size: 90%;
+     
+      box-shadow: none;
+    }
+    .slide_2_v2_text h1{
+      font-size: 200%;
+  }
+  .slide_2_v2_text p{
+    font-size: 90%;
+}
+  .slide_2_v2_about a {
+    height: min-content;
+    font-size: 90%;
+    text-decoration: inherit;
+    color: inherit;
+  }
+  .slide_2_v2_text h1{
+    margin-top: 20%;
+      font-size: 230%;
+       /* background-color: red; */
+  }
+ 
+  /* .slide_2_v2_text h1{
+      font-size: 200%;
+  } */
+  /* a{
+    background-color: steelblue;
+  }
+  ul{
+    background-color: steelblue;
+  }
+  a:hover{
+    background-color: lightsteelblue;
+  }
+  ul{
+    background-color: lightsteelblue;
+  } */
+  header h2{
+      /* background-color: red; */
+    font-size: 200%;
+  }
+  .seek h1{
+      font-size: 190%;
+  }
+  .slide_3{
+    font-size: 60%;
+    min-height: 350px;
+  }
+  nav ul li{
+    font-size: 90%;
+    margin-right:10px;
+  }
+  .logo h3{
+    font-size: 200%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  body { font-size: 80%; }
+  .slide_2_v2_text h1{
+    font-size: 170%;
+     /* background-color: orange; */
+  }
+  .slide_3{
+    font-size: 60%;
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slide_3{
+    font-size: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 479px) {
+    body { font-size: 90%; }
+    .slide_2_v2_text h1{
+      font-size: 140%;
+       /* background-color: blue; */
+  }
+
+
 }
