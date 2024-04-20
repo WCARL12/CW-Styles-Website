@@ -32,7 +32,7 @@ body {
     fixed;
 
   /* max-width: 700px; */
-  max-width: 900px;
+  max-width: 1200px;
   /* background-image: url("/img/15338.png"); */
 }
 section {
@@ -114,7 +114,8 @@ section div {
   font-weight: bolder;
   padding-left: 40px;
   font-size: 2.5em;
-  color: white;
+  color:  rgb(255, 213, 122)
+  
 }
 .logo img {
   clip-path: circle();
@@ -150,7 +151,7 @@ nav ul li {
 .navbar a:after {
   content: "";
   position: absolute;
-  background-color: #e4ffe4;
+  background-color: #ffffff;
   height: 3px;
   width: 0;
   left: 0;
@@ -169,6 +170,9 @@ nav ul li {
   width: 100%;
 
 
+}
+#logo_header{
+  color:  rgb(255, 213, 122) !important;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -208,7 +212,9 @@ nav ul li {
 .navbar h3{
   font-size: 200%;
   padding-left:20px;
+  color:  rgb(255, 213, 122);
 }
+
 }
 @media only screen and (max-width: 620px) {
   section h1{
