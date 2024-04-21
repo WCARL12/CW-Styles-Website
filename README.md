@@ -1,5 +1,5 @@
 # CW Styles Website
-<a href='https://wcarl12.github.io/Online-Fashion-Store/'>Website Link</a>
+<a href='https://wcarl12.github.io/CW-Styles-Website/'>Website Link</a>
 
 <h2>Project Description</h2>
 <ul>
