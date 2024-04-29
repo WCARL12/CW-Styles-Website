@@ -594,6 +594,9 @@ footer {
   footer{
     font-size: 90%;
   }
+  #social_media{
+    margin-top:10px;
+  }
 
 }
 @media only screen and (max-width: 620px) {
