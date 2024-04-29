@@ -671,5 +671,8 @@ footer {
   .f_logo{
     margin:20px 0 0 20px;
   }
+  .f_all{
+    font-size: 90%;
+  }
 
 }
