@@ -17,7 +17,8 @@ body{
   align-items: center;
   padding: 20px;
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
+  height:fit-content
 }
 
 .logo h3{
@@ -64,7 +65,7 @@ nav ul li {
 .navbar a:after {
   content: "";
   position: absolute;
-  background-color: #e4ffe4;
+  background-color: #d2d2d2;
   height: 3px;
   width: 0;
   left: 0;
@@ -168,6 +169,7 @@ nav ul li {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   margin-top:240px;
+
 }
 .slide_2_v2_text p {
   /* font-size: 22px; */
@@ -268,6 +270,12 @@ footer {
 .f_payment {
   margin-left: 35%;
 }
+.f_payment_options_1{
+  display: inline-block;
+}
+.f_payment_options_2{
+  display: inline-block;
+}
 
 .f_all {
   width: 50%;
@@ -288,7 +296,7 @@ footer {
 
 }
 .f_logo {
-  padding-top: 20px;
+  padding-top: 30px;
   margin-left: 20%;
 }
 
@@ -514,6 +522,9 @@ footer {
       font-size: 65%;
       min-height: 400px;
     }
+    .slide_3_container{
+      font-size: 120%;
+    }
     
 
 }
@@ -531,7 +542,7 @@ footer {
     font-size: 90%;
 }
   .slide_2_v2_about a {
-    height: min-content;
+    /* height: min-content; */
     font-size: 90%;
     text-decoration: inherit;
     color: inherit;
@@ -541,22 +552,18 @@ footer {
       font-size: 230%;
        /* background-color: red; */
   }
+  .slide_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 120%; */
+  }
+  .slide_3_container{
+    font-size: 110%;
+    margin:0 auto;
+    width: 55%;
+  }
  
-  /* .slide_2_v2_text h1{
-      font-size: 200%;
-  } */
-  /* a{
-    background-color: steelblue;
-  }
-  ul{
-    background-color: steelblue;
-  }
-  a:hover{
-    background-color: lightsteelblue;
-  }
-  ul{
-    background-color: lightsteelblue;
-  } */
   header h2{
       /* background-color: red; */
     font-size: 200%;
@@ -575,23 +582,73 @@ footer {
   .logo h3{
     font-size: 200%;
   }
+  .f_div_2_1{
+    display: flex;
+    width: 100%
+    
+  }
+  .f_div_2_2{
+    display: flex;
+    width: 100%;
+  }
+  footer{
+    font-size: 90%;
+  }
+
 }
 @media only screen and (max-width: 620px) {
   body { font-size: 80%; }
+  .slide_2_v2_img{
+    display: none;
+  }
+  .slide_2_v2_text{
+    font-size: 120%;
+  }
   .slide_2_v2_text h1{
     font-size: 170%;
+    margin: 0;
      /* background-color: orange; */
   }
+  .slide_2_v2_text p{
+    padding:0;
+  }
+  p.slide_2_v2_about{
+    padding: 20px;
+    margin-bottom: 20px;
+  }
   .slide_3{
-    font-size: 60%;
+    font-size: 65%;
     min-height: 300px;
   }
 }
 
 @media only screen and (max-width: 500px) {
   .slide_3{
-    font-size: 50%;
+    font-size: 63%;
   }
+  header{
+    height:fit-content
+  }
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+  }
+  .navbar h3{
+    padding:0;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li{
+    text-align: center;
+    padding: 10px 0 0 0 ;
+    margin:0;
+  }
+
 }
 
 
@@ -601,6 +658,15 @@ footer {
       font-size: 140%;
        /* background-color: blue; */
   }
-
+  .seek{
+    font-size: 75%;
+  }
+  
+  .f_payment{
+    margin:0 0 0 20px;
+  }
+  .f_logo{
+    margin:20px 0 0 20px;
+  }
 
 }
